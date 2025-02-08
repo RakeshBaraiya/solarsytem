@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>solar system</title>
+    <style>
+      body {
+        background-image: url(./image/milkeyway.jpg);
+        background-size: cover;
+      }
+      .sun {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 100px;
+        background-image: url(./image/sun.PNG);
+        background-size: cover;
+        margin: 350px auto;
+        position: relative;
+      }
+      .common{
+        position:absolute;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+        animation-play-state:paus
+      }
+      .mercury {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-image: url(./image/mercury.jpg);
+        background-size: cover;
+        bottom: 25px;
+        right: -100px;
+        animation-name: mercuryAnimation;
+        animation-duration: 1s;
+        transform-origin:-150PX;
+        animation-play-state:
+      }
+      @keyframes mercuryAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform:rotatez(359deg);
+        }
+      }
+      .venus{
+        width:70px;
+        height:70px;
+        border-radius:70px;
+        background-image:url(./image/venus.png);
+        background-size:cover;
+        bottom:19px;
+        right:-210px;
+        animation-name:venusAnimation;
+        animation-duration:2s;
+        transform-origin:-180px center;
+        animation-play-state:
+        
+      }
+      @keyframes venusAnimation{
+        to{ 
+            transform:rotatez(0deg);
+
+        }
+        from{
+            transform:rotatez(359deg);
+        }
+      }
+      .earth{
+        width:80px;
+        height:80px;
+        border-radius:80px;
+        background-image:url(./image/earth.jpg);
+        background-size: cover;
+        bottom:10px;
+        right:-330px;
+        transform-origin:-338px center;
+        animation-name:earthAnimation;
+        animation-duration:3s;
+        animation-play-state:
+      }
+      @keyframes earthAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform: rotatez(359deg);
+        }
+      }
+      .moon{
+        width:20px;
+        height:20px;
+        background:#fff;
+        border-radius:20px;
+        bottom:30px;
+        right:-30px;
+        animation-name:moonAnimation;
+        animation-duration:1s;
+        transform-origin:-50px center;
+      }
+      @keyframes moonAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform:rotatez(359deg);
+        }
+      }
+      .jupiter{
+        width:100px;
+        height:100px;
+        border-radius:70px;
+        background-image:url(./image/jupiter.jpg);
+        background-size:cover;
+        bottom:1px;
+        right:-480px;
+        animation-name:jupiterAnimation;
+        animation-duration:5s;
+        transform-origin:-450px center;
+    }
+    @keyframes jupiterAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform:rotatez(359deg);
+        }
+    }
+    .saturn{
+        width:70px;
+        height:70px;
+        border-radius:70px;
+        background-image:url(./image/saturn\ new.png);
+        background-size:70px 70px;
+        bottom:25px;
+        right:-580px;
+        transform-origin:-550px center;
+        animation-name:saturnAnimation;
+        animation-duration:6s;
+
+    }
+    @keyframes saturnAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform:rotatez(359deg);
+        }
+    }
+    .neptun{
+        width:50px;
+        height:50px;
+        border-radius:50px;
+        background-image:url(./image/neptun.jpg);
+        background-size:cover;
+        bottom:25px;
+        right:-700px;
+        transform-origin:-700px center;
+        animation-name:neptunAnimation;
+        animation-duration:8s;
+        
+    }
+    @keyframes neptunAnimation{
+        to{
+            transform:rotatez(0deg);
+        }
+        from{
+            transform:rotatez(359deg);
+
+        }
+    }
+    .pluto{
+        width:50px;
+        height:50px;
+        border-radius:50px;
+        background-image:url(./image/pluto.png);
+        bottom:30px;
+        right:-850px;
+        background-size:cover;
+        transform-origin:-800px center;
+        animation-name:plutoAnimation;
+        animation-duration:10s;        
+    }
+    @keyframes plutoAnimation{
+        0%{
+            transform:rotatez(0deg);
+        }
+        100%{
+            transform:rotatez(-359deg);
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="sun">
+      <div class="common mercury"></div>
+      <div class="common venus"></div>
+      <div class="common earth">
+        <div class="common moon"></div>
+      </div>
+      <div class="common jupiter"></div>
+      <div class="common saturn"></div>
+      <div class="common neptun"></div>
+      <div class="common pluto"></div>
+    </div>
+  </body>
+</html>

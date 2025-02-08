@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title> solar system</title>
+        <style>
+            body{
+                background-image:url(./image/milkeyway.jpg);
+                background-size:cover;
+            }
+            .sun{
+                width:100px;
+                height:100px;
+                background:red;
+                border-radius:100px;
+                margin:200px auto;
+                background-image:url(./image/sun.PNG);
+                background-size:cover;
+                position:relative;
+                
+            }
+            .mercury{
+                width:50px;
+                height:50px;
+                border-radius:50px;
+                background-image:url(./image/mercury.jpg);
+                background-size:cover;
+                position:absolute;
+                bottom:25px;
+                right:-100px;
+                animation-name:mercuryAnimation;
+                animation-duration:1s;
+                animation-iteration-count:infinite;
+                animation-timing-function:linear;
+                transform-origin:-150px;
+                animation-play-state:running;
+            }
+            @keyframes mercuryAnimation{
+                to{
+                    transform:rotatez(0deg);
+                }
+                from{
+                    transform:rotatez(-359deg);
+                }
+            }
+            .venus{
+                width:70px;
+                height:70px;
+                border-radius:70px;
+                background-image:url(./image/venus.png);
+                background-size:cover;
+                position:absolute;
+                bottom:19px;
+                right:-250px;
+                animation-name:venusAnimation;
+                animation-duration:2s;
+                animation-iteration-count:infinite;
+                animation-timing-function:linear;
+                transform-origin:-200px center;
+                animation-play-state:running;
+            }
+            @keyframes venusAnimation{
+                0%{
+                    transform:rotatez(0deg);
+                }
+                100%{
+                    transform:rotatez(359deg);
+                }
+            }
+            .earth{
+                width:80px;
+                height:80px;
+                border-radius:80px;
+                background-image: url(/image/earth.jpg);
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <Body>
+        <div class="sun">
+            <div class="mercury"></div>
+            <div class="venus"></div>
+            <div class="earth"></div>
+        </div>
+    </Body>
+</html>
